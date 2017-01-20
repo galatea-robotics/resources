@@ -1,0 +1,195 @@
+<GRAMMAR LANGID="409">
+	<DEFINE>
+		<ID NAME="SR_Default"  VAL="0"></ID>
+		<ID NAME="SR_Greeting" VAL="100"></ID>
+		<!--<ID NAME="SR_Inquiry1" VAL="110"></ID>
+		<ID NAME="SR_Inquiry2" VAL="120"></ID>
+		<ID NAME="SR_MyNameIs" VAL="210"></ID>
+		<ID NAME="SR_I_Am"     VAL="220"></ID>
+		<ID NAME="SR_Feedback" VAL="900"></ID>
+		<ID NAME="SR_Wildcard" VAL="999"></ID>
+		<ID NAME="SR_CMD_Look" VAL="1010"></ID>
+		<ID NAME="SR_CMD_Turn" VAL="1020"></ID>
+		<ID NAME="SR_CMD_Move" VAL="1030"></ID>
+		<ID NAME="SR_Continue" VAL="1100"></ID>
+		<ID NAME="SR_EndMove"  VAL="1190"></ID>
+		<ID NAME="SR_CMD_Face" VAL="1200"></ID>
+		<ID NAME="SR_PlayMP3"  VAL="2000"></ID>
+		<ID NAME="SR_Goodbye"  VAL="9190"></ID>-->
+	</DEFINE>
+	<RULE NAME="Greeting" ID="SR_Greeting" TOPLEVEL="ACTIVE">
+		<L>
+			<P>Hi</P>
+			<P>Hello</P>
+			<P>Hey</P>
+		</L>
+		<O>there</O>
+		<O>Dolly!</O>
+		<O>robot</O>
+	</RULE>
+	<!--<RULE NAME="Inquiry1" ID="SR_Inquiry1" TOPLEVEL="ACTIVE">
+		<P>What</P>
+		<O>is</O>
+		<L>
+			<P>your name?</P>
+			<P>are you?</P>
+		</L>
+		<O>anyway</O>
+	</RULE>
+	<RULE NAME="Inquiry2" ID="SR_Inquiry2" TOPLEVEL="ACTIVE">
+		<L>
+			<P>Be</P>
+			<P>Are you</P>
+			<P>Is that</P>
+			<P>You sound like</P>
+			<P>You look like</P>
+			<P>You are</P>
+			<P>You're</P>
+		</L>
+		<O>a</O>
+		<L>
+			<P>robot?</P>
+			<P>cat?</P>
+			<P>chicken?</P>
+			<P>cow?</P>
+			<P>dog?</P>
+			<P>duck?</P>
+		</L>
+	</RULE>
+	<RULE NAME="MyNameIs" ID="SR_MyNameIs" TOPLEVEL="ACTIVE">
+		<P>My name is</P>
+		<DICTATION />
+	</RULE>
+	<RULE NAME="I_Am"     ID="SR_I_Am"     TOPLEVEL="ACTIVE">
+		<L>
+			<P>I am</P>
+			<P>I'm</P>
+		</L>
+		<O>not</O>
+		<O>a</O>
+		<O>the</O>
+		<DICTATION MIN="1" MAX="10"/>
+	</RULE>
+	<RULE NAME="Feedback" ID="SR_Feedback" TOPLEVEL="ACTIVE">
+		<L>
+			<P>What?</P>
+			<P>Yes</P>
+			<P>No</P>
+			<P>Maybe</P>
+			<P>
+				<O>That's</O>
+				<O>Not</O>
+				<O>Very</O>
+				<L>
+					<P>Good</P>
+					<P>Bad</P>
+				</L>
+			</P>
+			<P>Thank You!</P>
+			<P>Thank's!</P>
+		</L>
+	</RULE>
+	<RULE NAME="CMD_Look" ID="SR_CMD_Look" TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<P>look</P>
+		<L>
+			<P>up</P>
+			<P>down</P>
+			<P>left</P>
+			<P>right</P>
+			<P>forward</P>
+			<P>ahead</P>
+		</L>
+	</RULE>
+	<RULE NAME="CMD_Turn" ID="SR_CMD_Turn" TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<L>
+			<P>move</P>
+			<P>turn</P>
+		</L>
+		<L>
+			<P>left</P>
+			<P>right</P>
+		</L>
+	</RULE>
+	<RULE NAME="CMD_Move" ID="SR_CMD_Move" TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<P>move</P>
+		<L>
+			<P>forward</P>
+			<P>backward</P>
+			<P>faster</P>
+			<P>slower</P>
+		</L>
+	</RULE>
+	<RULE NAME="Continue" ID="SR_Continue" TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<L>
+			<P>Keep Going...</P>
+			<P>Continue...</P>
+		</L>
+	</RULE>
+	<RULE NAME="EndMove"  ID="SR_EndMove"  TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<L>
+			<P>Okay</P>
+			<P>Stop!</P>
+		</L>
+	</RULE>
+	<RULE NAME="CMD_Face" ID="SR_CMD_Face" TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<O>that's</O>
+		<O>
+			<L>
+				<P>big</P>
+				<P>very</P>
+				<P>don't</P>
+				<P>not</P>
+				<P>no</P>
+			</L>
+		</O>
+		<L>
+			<P>smile!</P>
+			<P>funny!</P>
+			<P>nice</P>
+			<P>
+				<L>
+					<P>close</P>
+					<P>shut</P>
+				</L>
+				<O>your</O>
+				<L>
+					<P>mouth</P>
+					<P>face</P>
+				</L>
+			</P>
+		</L>
+	</RULE>
+-- ><!--
+  <RULE NAME="Wildcard" ID="SR_Wildcard" TOPLEVEL="ACTIVE">
+    <P>
+      <DICTATION MIN="2" MAX="8" />
+    </P>
+  </RULE>
+-- >
+	<RULE NAME="PlayMP3"  ID="SR_PlayMP3"  TOPLEVEL="ACTIVE">
+		<P>Play</P>
+		<O>a</O>
+		<L>
+			<P>Song?</P>
+			<P>MP3?</P>
+		</L>
+	</RULE>
+	<!--
+	<RULE NAME="Goodbye"  ID="SR_Goodbye"  TOPLEVEL="ACTIVE">
+		<O>Dolly,</O>
+		<L>
+			<P>Goodbye</P>
+			<P>Goodnight</P>
+			<P>Go to sleep</P>
+			<P>Go to bed</P>
+		</L>
+		<O>Dolly</O>
+	</RULE>
+-->
+</GRAMMAR>
