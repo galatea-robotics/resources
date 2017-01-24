@@ -1,6 +1,7 @@
 <GRAMMAR LANGID="409">
 	<DEFINE>
 		<ID NAME="SR_Evaluate" VAL="200"></ID>
+    <ID NAME="SR_Identify_Self" VAL="201"></ID>
 	</DEFINE>
 	<RULE NAME="Evaluate" ID="SR_Evaluate" TOPLEVEL="ACTIVE">
 		<L>
@@ -10,6 +11,18 @@
       <P>Color</P>
       <P>Shape</P>
     </L>
-    <DICTATION MIN="1" MAX="10"/>
+    <DICTATION MIN="0" MAX="10"/>
 	</RULE>
+  <RULE NAME="Identify Self" ID="SR_Identify_Self" TOPLEVEL="ACTIVE">
+    <L>
+      <P>What</P>
+      <P>What's</P>
+    </L>
+    <O>is</O>
+    <L>
+      <P>YOUR</P>
+      <P>MY</P>
+    </L>
+    <P>Name?</P>
+  </RULE>
 </GRAMMAR>

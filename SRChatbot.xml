@@ -8,10 +8,8 @@
 			<P>Hello</P>
 			<P>Hey</P>
 		</L>
-		<L>
-  		<O>there</O>
-		</L>
-		<O>Maria</O>
+    <O>there</O>
+    <O>Maria</O>
 		<O>robot</O>
 	</RULE>
 </GRAMMAR>
