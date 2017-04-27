@@ -1,0 +1,13 @@
+### These are feedback tokens which the Speech Recognition Engine ###
+### will dynamically expect, after completing an 'Evaluate' task, ###
+### i.e. responding to a question such as "What color is this?"   ###
+
+### DO NOT MODIFY THE FIRST TWO COLUMNS ###
+
+2 : Yes	  : Yes, Right, Correct
+3 : Good  : Good, Good Job, Nice
+4 : Great : Great, Great Job, Fantastic, Excellent
+5 : MehNo : Um
+6 : No    : No, Wrong, Sorry
+7 : Bad   : Bad
+8 : Awful : Awful, Terrible, Horrible, You Suck
