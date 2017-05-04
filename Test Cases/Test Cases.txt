@@ -1,6 +1,10 @@
 
-1.1.0.0.100	Doesn't distinguish black from gray
-1.1.1.0.100	Chevron2.png causes a recursive loop
-1.1.1.0.101	Refers to 4-pointed star as "Four Points" when it should be star
+- 1.1.0.0.100	Doesn't distinguish black from gray
+- 1.1.1.0.100	Chevron2.png causes a recursive loop
+  1.1.1.0.101	Refers to 4-pointed star as "Four Points" when it should be star
 		Refers to 5-pointed star as "I don't know"
-1.1.2.0.100	Fails all three oval shapes
+  1.1.2.0.100	Fails all three oval shapes
+  1.1.3.3.100
+  1.1.3.3.101
+- 1.1.3.3.102	Runtime error
+  1.1.3.3.103	Color Saturation normalization rendered as reddish
